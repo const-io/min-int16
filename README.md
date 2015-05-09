@@ -1,4 +1,4 @@
-const-min-int16
+Min Int16
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,25 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-const-min-int16' );
+var MIN_INT16 = require( 'compute-const-min-int16' );
 ```
 
-#### foo( arr )
+#### MIN_INT16
 
-What does this function do?
+Minimum signed 16-bit integer.
+
+``` javascript
+MIN_INT16 === -1 * Math.pow( 2, 15 );
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-const-min-int16' );
+var MIN_INT16 = require( 'compute-const-min-int16' );
+
+console.log( MIN_INT16 );
+// returns -32768
 ```
 
 To run the example code from the top-level application directory,

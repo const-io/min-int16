@@ -1,3 +1,5 @@
 'use strict';
 
-var foo = require( './../lib' );
+var MIN_INT16 = require( './../lib' );
+
+console.log( MIN_INT16 );
