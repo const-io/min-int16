@@ -1,31 +1,21 @@
-/* global require, describe, it */
 'use strict';
 
 // MODULES //
 
-var // Expectation library:
-	chai = require( 'chai' ),
-
-	// Module to be tested:
-	CONST = require( './../lib' );
-
-
-// VARIABLES //
-
-var expect = chai.expect,
-	assert = chai.assert;
+var tape = require( 'tape' );
+var pow = require( 'math-power' );
+var MIN_INT16 = require( './../lib' );
 
 
 // TESTS //
 
-describe( 'compute-const-min-int16', function tests() {
+tape( 'the main export is a number', function test( t ) {
+	t.ok( true, __filename );
+	t.equal( typeof MIN_INT16, 'number', 'main export is a number' );
+	t.end();
+});
 
-	it( 'should export a number', function test() {
-		expect( CONST ).to.be.a( 'number' );
-	});
-
-	it( 'should equal -32768', function test() {
-		assert.strictEqual( CONST, -1*Math.pow(2,15) );
-	});
-
+tape( 'the exported value equals -2**15', function test( t ) {
+	t.equal( MIN_INT16, -pow(2,15), 'equals -1 * 2**15' );
+	t.end();
 });
