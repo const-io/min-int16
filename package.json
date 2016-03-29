@@ -1,5 +1,5 @@
 {
-  "name": "compute-const-min-int16",
+  "name": "const-min-int16",
   "version": "1.0.1",
   "description": "Minimum signed 16-bit integer.",
   "author": {

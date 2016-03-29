@@ -8,14 +8,14 @@ MIN INT16
 ## Installation
 
 ``` bash
-$ npm install compute-const-min-int16
+$ npm install const-min-int16
 ```
 
 
 ## Usage
 
 ``` javascript
-var MIN_INT16 = require( 'compute-const-min-int16' );
+var MIN_INT16 = require( 'const-min-int16' );
 ```
 
 #### MIN_INT16
@@ -30,7 +30,7 @@ MIN_INT16 === (-1 * Math.pow(2,15));
 ## Examples
 
 ``` javascript
-var MIN_INT16 = require( 'compute-const-min-int16' );
+var MIN_INT16 = require( 'const-min-int16' );
 
 console.log( MIN_INT16 );
 // returns -32768
@@ -100,8 +100,8 @@ $ make view-browser-tests
 Copyright &copy; 2015-2016. The [Compute.io][compute-io] Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/compute-const-min-int16.svg
-[npm-url]: https://npmjs.org/package/compute-const-min-int16
+[npm-image]: http://img.shields.io/npm/v/const-min-int16.svg
+[npm-url]: https://npmjs.org/package/const-min-int16
 
 [build-image]: http://img.shields.io/travis/const-io/min-int16/master.svg
 [build-url]: https://travis-ci.org/const-io/min-int16
